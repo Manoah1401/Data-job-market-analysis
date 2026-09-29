@@ -1,7 +1,7 @@
 # Introduction
 📊 Dive into the data job market! Focusing on data analyst roles, this project explores 💰 top-paying jobs, 🔥 in-demand skills, and where 📈 high demand meets high salary in data analytics.
 
-🔍 SQL queries? Check them out here: [project_sql folder](/SQL%20files/)
+🔍 SQL queries? Check them out here: [project_sql folder](/sql-job-market/SQL%20files/)
 
 # Background
 This project analyzes Data Analyst job postings to identify high-paying roles, frequently requested skills, and the relationship between skills, job opportunities, and average salaries. I used PostgreSQL to explore the dataset and answer five questions related to the Data Analyst job market.
@@ -59,14 +59,14 @@ FROM
     LEFT JOIN company_dim as cd
     ON ts.company_id = cd.company_id
 ```
-Here's the breakdown of the top data analyst jobs in 2026:
+Here's the breakdown of the top data analyst jobs in this dataset:
 
 - **Wide Salary Range**: Top 10 paying data analyst roles span from $184,000 to $650,000, indicating significant salary potential in the field.
 - **Diverse Employers**: Companies like SmartAsset, Meta, and AT&T are among those offering high salaries, showing a broad interest across different industries.
 - **Job Title Variety**: There's a high diversity in job titles, from Data Analyst to Director of Analytics, reflecting varied roles and specializations within data analytics.
 
-![Top Paying Graph](asset/1.jpg)
-Top Paying Roles Bar graph visualizing the salary for the top 10 salaries for data analysts; ChatGPT generated this graph from my SQL query results
+![Top Paying Graph](/sql-job-market/asset/1.jpg)
+Top Paying Roles Bar graph visualizing the salary for the top 10 salaries for data analysts
 
 ### 2. Skills for Top Paying Jobs
 To understand what skills are required for the top-paying jobs, I joined the job postings with the skills data, providing insights into what employers value for high-compensation roles.
@@ -117,7 +117,7 @@ Here's the frequency of skills listed across the 10 highest-paying remote Data A
 - Tableau is also highly sought after, with a bold count of 6. 
 - Other skills like R, Snowflake, Pandas, and Excel show varying degrees of demand.
 
-![Most In Demand](asset/2.jpg)
+![Most In Demand](/sql-job-market/asset/2.jpg)
 Top Paying Skills Bar graph visualizing the count of skills for the top 10 paying jobs for data analysts; ChatGPT generated this graph from my SQL query results
 
 ### 3. In-Demand Skills for Data Analysts
@@ -141,7 +141,7 @@ ORDER BY
     Demand DESC
 LIMIT 5
 ```
-Here's the breakdown of the most demanded skills for data analysts in 2026
+Here's the breakdown of the most demanded skills for data analysts in this dataset
 
 - SQL and Excel remain fundamental, emphasizing the need for strong foundational skills in data processing and spreadsheet manipulation.
 - Programming and Visualization Tools like Python, Tableau, and Power BI are essential, pointing towards the increasing importance of technical skills in data storytelling and decision support.
@@ -238,10 +238,10 @@ Combining insights from demand and salary data, this query aimed to pinpoint ski
 
 Table of Data Analyst skills ranked by number of opportunities, with average salary
 
-Here's a breakdown of the most optimal skills for Data Analysts in 2026:
+Here's a breakdown of the most optimal skills for Data Analysts in this dataset:
 
 - **SQL and Excel Lead in Opportunities:**: SQL has the highest number of opportunities in the analysis, appearing in 3,083 job postings, followed by Excel with 2,143 opportunities. This highlights the importance of these foundational skills across Data Analyst positions.
-- **Python Has the Highest Average Salary Among the Most In-Demand Skills:**: Python appears in 1,840 opportunities and has an average salary of $101,511, the highest average salary among the six most frequently requested skills in the dataset. R also shows a relatively high average salary of $98,707 across 1,073 opportunities.
+- **Python Has the Highest Average Salary Among the Most In-Demand Skills:**: Python appears in 1,840 opportunities and has an average salary of $101,511, the highest average salary among the ten most frequently requested skills in the dataset. R also shows a relatively high average salary of $98,707 across 1,073 opportunities.
 - **Data Visualization Skills Remain Highly Relevant:**: Tableau appears in 1,659 opportunities with an average salary of $97,978, while Power BI appears in 1,044 opportunities with an average salary of $92,323. This indicates that both visualization and business intelligence tools are commonly associated with Data Analyst roles.
 - **Specialized Database and Office Skills Show Lower Opportunity Counts:** SQL Server appears in 336 opportunities with an average salary of $96,191, while Word and PowerPoint appear in 527 and 524 opportunities, with average salaries of $82,940 and $88,315, respectively.
   
