@@ -118,8 +118,7 @@ Here's the frequency of skills listed across the 10 highest-paying remote Data A
 - Other skills like R, Snowflake, Pandas, and Excel show varying degrees of demand.
 
 ![Most In Demand](/sql-job-market/asset/2.jpg)
-Top Paying Skills Bar graph visualizing the count of skills for the top 10 paying jobs for data analysts; ChatGPT generated this graph from my SQL query results
-
+Top Paying Skills Bar graph visualizing the count of skills for the top 10 paying jobs for data analysts.
 ### 3. In-Demand Skills for Data Analysts
 This query helped identify the skills most frequently requested in job postings, directing focus to areas with high demand.
 
