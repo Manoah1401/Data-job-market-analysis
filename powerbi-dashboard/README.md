@@ -1,1 +1,2 @@
-This is the readme for the powerbi dashboard
+# Power BI Dashboard
+![Power BI Dashboard](assets/powerbi_dashboard.gif)
