@@ -1,5 +1,5 @@
 # Excel Salary Dashboard
-![Salary Dashboard](assets/Dashboard.gif)
+![Salary Dashboard](assets/Salary_Dashboard.png)`
 
 ## Introduction
 
