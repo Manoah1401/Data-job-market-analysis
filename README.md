@@ -59,9 +59,9 @@ All three projects explore the same question from different angles: **what does 
 
 ## 3️⃣ Power BI: Overiew Dashboard
 
-**Focus:** ✏️ A quick and simple interactive dashboard to quickly analyse the job market data.
+**Focus:** ✏️ A quick and simple interactive dashboard to quickly analyse the job market data and present to the shareholders.
 
-# Note: This section is still in progress
+**#Note:** This section is still in progress
 
 ![Power BI dashboard](powerbi-dashboard/assets/powerbi_dashboard.gif)
 
