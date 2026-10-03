@@ -1,6 +1,6 @@
 # Excel Salary Dashboard
 
-![Dashboard](/assets/Dashboard.gif)
+![Dashboard](assets/Dashboard.gif)
 
 ## Introduction
 
@@ -9,7 +9,7 @@ This data jobs salary dashboard was created to help job seekers investigate sala
 The data is from Luke Barrouse's course, which provides a foundation in analyzing data using this powerful tool. The data contains detailed information on job titles, salaries, locations, and essential skills that are presented here.
 
 ### Dashboard File
-My final dashboard is in ![Project](Project.xlsx).
+My final dashboard is in [Project](Project.xlsx).
 
 ### Excel Skills Used
 
@@ -34,7 +34,7 @@ The dataset used for this project contains real-world data science job informati
 
 #### 📊 Data Science Job Salaries - Bar Chart
 
-![Bar chart](/assets/Bar-chart.gif)
+![Bar chart](assets/Bar-chart.gif)
 
 - 🛠️ **Excel Features:** Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
 - 🎨 **Design Choice:** Horizontal bar chart for visual comparison of median salaries.
@@ -43,7 +43,7 @@ The dataset used for this project contains real-world data science job informati
 
 #### 🗺️ Country Median Salaries - Map Chart
 
-![Country Map](/assets/country_map.gif)
+![Country Map](assets/country_map.gif)
 
 - 🛠️ **Excel Features:** Utilized Excel's map chart feature to plot median salaries globally.
 - 🎨 **Design Choice:** Color-coded map to visually differentiate salary levels across regions.
@@ -74,7 +74,7 @@ IF(
 
 🍽️ Background Table
 
-![Job title median salary](/assets/median_table.png)
+![Job title median salary](assets/median_table.png)
 
 #### ⏰ Count of Job Schedule Type
 
@@ -87,7 +87,7 @@ IF(
 
 🍽️ Background Table
 
-![Job type vs count](/assets/count_table.png)
+![Job type vs count](assets/count_table.png)
 
 
 ### ❎ Data Validation
@@ -99,7 +99,7 @@ IF(
     - 🚫 Incorrect or inconsistent entries are prevented
     - 👥 Overall usability of the dashboard is enhanced
 
-![Data Validation](/assets/Data_Validation.gif)
+![Data Validation](assets/Data_Validation.gif)
 
 ## Conclusion
 
