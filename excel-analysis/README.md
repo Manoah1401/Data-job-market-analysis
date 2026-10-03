@@ -1,63 +1,61 @@
 # Excel Salary Dashboard
-![Salary Dashboard](assets/Salary_Dashboard.png)`
+
+![Dashboard](/assets/Dashboard.gif)
 
 ## Introduction
 
-This data jobs salary dashboard helps job seekers explore salaries for the roles they want, so they can check they are being paid fairly. You pick a job title, country, and schedule type, and the dashboard shows the median salary, how roles compare, where in the world pay is highest, and the **top skill** employers ask for in that role.
+This data jobs salary dashboard was created to help job seekers investigate salaries for their desired jobs and ensure they are being adequately compensated. 
 
-I built it as part of my transition into data analytics, to practice turning a raw dataset into something interactive and useful.
+The data is from Luke Barrouse's course, which provides a foundation in analyzing data using this powerful tool. The data contains detailed information on job titles, salaries, locations, and essential skills that are presented here.
 
-> ✏️ **[EDIT]** Add 1-2 sentences in your own words about why you built this and what you wanted to learn.
+### Dashboard File
+My final dashboard is in ![Project](Project.xlsx).
 
-## Dataset
+### Excel Skills Used
 
-The data comes from Luke Barousse's Excel course and contains real-world data job postings from 2023, including:
+The following Excel skills were utilized for analysis:
 
-- 👨‍💼 Job titles
-- 💰 Salaries
-- 📍 Locations
-- 🛠️ Skills
+- **📉 Charts**
+- **🧮 Formulas and Functions**
+- **❎ Data Validation**
 
-## Dashboard File
+### Data Jobs Dataset
 
-My final dashboard is in `Salary_Dashboard.xlsx`.
+The dataset used for this project contains real-world data science job information from 2023. The dataset is available via Luke Barrouse's course, which provides a foundation for analyzing data using Excel. It includes detailed information on:
 
-> ✏️ **[EDIT]** Make sure this matches your actual file name.
-
-## Excel Skills Used
-
-- 📉 Charts
-- 🧮 Formulas and Functions
-- ❎ Data Validation
-- 🃏 Dashboard cards (KPI-style callouts)
+- **👨‍💼 Job titles**
+- **💰 Salaries**
+- **📍 Locations**
+- **🛠️ Skills**
 
 ## Dashboard Build
 
-### 📉 Charts
+### 📉 Charts
 
 #### 📊 Data Science Job Salaries - Bar Chart
 
-> 📸 **[INSERT IMAGE: bar chart]** Right-click the chart in Excel, choose *Save as Picture*, and add: `![Bar chart](assets/Chart1.png)`
+![Bar chart](/assets/Bar-chart.gif)
 
-- 🛠️ **Excel Features:** Bar chart with formatted salary values and a layout cleaned up for clarity.
-- 🎨 **Design Choice:** Horizontal bars make it easy to compare median salaries across job titles.
-- 📉 **Data Organization:** Job titles sorted by descending salary.
-- 💡 **Insights Gained:** ✏️ [e.g., Senior roles and engineers tend to earn more than analyst roles. Replace with what *your* chart shows.]
+- 🛠️ **Excel Features:** Utilized bar chart feature (with formatted salary values) and optimized layout for clarity.
+- 🎨 **Design Choice:** Horizontal bar chart for visual comparison of median salaries.
+- 📉 **Data Organization:** Sorted job titles by descending salary for improved readability.
+- 💡 **Insights Gained:** This enables quick identification of salary trends, noting that Senior roles and Engineers are higher-paying than Analyst roles.
 
-#### 🗺️ Country Median Salaries - Map Chart
+#### 🗺️ Country Median Salaries - Map Chart
 
-> 📸 **[INSERT IMAGE: map chart]** `![Map chart](assets/Chart2.png)`
+![Country Map](/assets/country_map.gif)
 
-- 🛠️ **Excel Features:** Excel's map chart to plot median salary by country.
-- 🎨 **Design Choice:** Color scale to separate higher- and lower-paying regions.
-- 📊 **Data Representation:** Median salary for every country with available data.
-- 💡 **Insights Gained:** ✏️ [What stands out about global salary differences?]
+- 🛠️ **Excel Features:** Utilized Excel's map chart feature to plot median salaries globally.
+- 🎨 **Design Choice:** Color-coded map to visually differentiate salary levels across regions.
+- 📊 **Data Representation:** Plotted median salary for each country with available data.
+- 👁️ **Visual Enhancement:** Improved readability and immediate understanding of geographic salary trends.
+- 💡 **Insights Gained:** Enables quick grasp of global salary disparities and highlights high/low salary regions.
 
-### 🧮 Formulas and Functions
+### 🧮 Formulas and Functions
 
-#### 💰 Median Salary by Job Title
+#### 💰 Median Salary by Job Titles
 
-```excel
+```
 =MEDIAN(
 IF(
     (jobs[job_title_short]=A2)*
@@ -69,69 +67,40 @@ IF(
 )
 ```
 
-- 🔍 **Multi-Criteria Filtering:** Checks job title, country, and schedule type, and skips blank salaries.
-- 📊 **Array Formula:** `MEDIAN()` wrapped around a nested `IF()` to work on an array.
-- 🎯 **Tailored Insights:** Gives salary figures for the exact title, country, and type selected.
-- 🔢 **Formula Purpose:** Fills the background table that feeds the charts.
+- 🔍 **Multi-Criteria Filtering:** Checks job title, country, schedule type, and excludes blank salaries.
+- 📊 **Array Formula:** Utilizes `MEDIAN()` function with nested `IF()` statement to analyze an array.
+- 🎯 **Tailored Insights:** Provides specific salary information for job titles, regions, and schedule types.
+- **🔢 Formula Purpose:** This formula populates the table below, returning the median salary based on job title, country, and type specified.
 
-#### 🍽️ Background Table
+🍽️ Background Table
 
-> 📸 **[INSERT IMAGE: screenshot of the background table]** `![Background table](assets/Background_Table.png)`
+![Job title median salary](/assets/median_table.png)
 
-#### 🃏 Top Skill Card
+#### ⏰ Count of Job Schedule Type
 
-> ✏️ **[EDIT]** This is the part that makes your dashboard different, so explain it well. Paste your real formula below.
-
-```excel
--- PASTE YOUR TOP SKILL FORMULA HERE
 ```
-
-- 🔍 **What it does:** ✏️ [In one line: e.g., finds the skill that appears most often for the selected job title, country, and type.]
-- 🧰 **Functions used:** ✏️ [List the functions you used]
-- 🔄 **Interactivity:** The card updates whenever the dropdown selections change.
-- 💡 **Why a skill card:** ✏️ [Why you chose it: it tells job seekers what to learn, not just what they might earn.]
-
-> 📸 **[INSERT IMAGE: close-up of the Top Skill card]** `![Top skill card](assets/Top_Skill_Card.png)`
-
-#### ⏰ Job Schedule Type List
-
-```excel
 =FILTER(J2#,(NOT(ISNUMBER(SEARCH("and",J2#))+ISNUMBER(SEARCH(",",J2#))))*(J2#<>0))
 ```
 
-- 🔍 **Unique List Generation:** `FILTER()` removes entries containing "and" or commas, and drops zero values.
-- 🔢 **Formula Purpose:** Produces a clean list of schedule types for the dropdown.
+- 🔍 **Unique List Generation:** This Excel formula below employs the `FILTER()` function to exclude entries containing "and" or commas, and omit zero values.
+- **🔢 Formula Purpose:** This formula populates the table below, which gives us a list of unique job schedule types.
 
-> 📸 **[INSERT IMAGE: schedule type list]** `![Schedule types](assets/Type_List.png)`
+🍽️ Background Table
 
-### ❎ Data Validation
+![Job type vs count](/assets/count_table.png)
 
-- 🔒 **Filtered list as a dropdown:** The cleaned schedule-type list is used as a Data Validation rule for the Job Title, Country, and Type inputs (Data tab → Data Validation).
-- 🎯 Users can only choose valid, predefined options.
-- 🚫 Typos and inconsistent entries are prevented.
-- 👥 The dashboard is easier to use.
 
-> 📸 **[INSERT IMAGE or GIF: dropdown in action]** Record a short screen capture of you changing the dropdowns and the charts and Top Skill card updating (ScreenToGif on Windows, or Win+G Game Bar), then add: `![Dropdown demo](assets/Dropdown_Demo.gif)`
+### ❎ Data Validation
 
-## 🎥 Demo Video (optional)
+#### 🔍 Filtered List
 
-> 🎥 **[INSERT VIDEO: 1-2 minute walkthrough]** Record yourself using the dashboard, upload it to YouTube as "Unlisted", and add a clickable thumbnail: `[![Watch the demo](assets/video_thumbnail.png)](https://youtube.com/your-video-link)`
+- 🔒 **Enhanced Data Validation:** Implementing the filtered list as a data validation rule under the `Job Title`, `Country`, and `Type` option in the Data tab ensures:
+    - 🎯 User input is restricted to predefined, validated schedule types
+    - 🚫 Incorrect or inconsistent entries are prevented
+    - 👥 Overall usability of the dashboard is enhanced
 
-## What I Learned
-
-- ✏️ [Skills you practiced, e.g., array formulas, `FILTER`, map charts, data validation]
-- ✏️ [What was hardest, and how you worked through it]
+![Data Validation](/assets/Data_Validation.gif)
 
 ## Conclusion
 
-✏️ [3-4 sentences: what the dashboard shows about salary trends, what the Top Skill card adds, and how a job seeker could use it.]
-
-## Acknowledgments
-
-Dataset and course by Luke Barousse. Dashboard design and the Top Skill card are my own additions.
-
-> ✏️ **[EDIT]** Keep that last sentence only if it's true.
-
----
-
-📫 Connect with me on [GitHub](https://github.com/Manoah1401)
+I created this dashboard to showcase insights into salary trends across various data-related job titles. Utilizing data from Luke Barrouse's course, this dashboard allows users to make informed decisions about their career paths. Exploring the functionalities to understand how location and job type influence salaries. 
