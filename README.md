@@ -41,7 +41,7 @@ All three projects explore the same question from different angles: **what does 
 
 ![SQL results](sql-job-market/asset/2.jpg)
 
-👉 [Full project and queries](sql-job-market)
+Click here for the complete project👉 [Full project and queries](sql-job-market)
 
 ---
 
@@ -55,7 +55,7 @@ All three projects explore the same question from different angles: **what does 
 
 ![Excel dashboard](excel-analysis/assets/Dashboard.gif)
 
-👉 [Full project and dashboard file](excel-analysis)
+Click here for the complete project👉 [Full project and dashboard file](excel-analysis)
 
 ---
 
@@ -70,7 +70,7 @@ All three projects explore the same question from different angles: **what does 
 ![Power BI dashboard](powerbi-dashboard/assets/Final-Project-demo.gif)
 
 
-👉 [Full project and .pbix file](powerbi-dashboard)
+Click here for the complete project👉 [Full project and .pbix file](powerbi-dashboard)
 
 ---
 
