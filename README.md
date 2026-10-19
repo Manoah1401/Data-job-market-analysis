@@ -1,13 +1,15 @@
-# 👋 Hi, I'm Manoah Noble
+# Data Nerd Job Market Analysis
 
-### Aspiring Data Analyst | SQL • Excel • Power BI
+### SQL • Excel • Power BI
 
 
-## About Me
+## About the project
 
-I'm a Toronto-based data professional moving into data analytics from an SAP integration background. 
+The intensions with this portfolio project were to get hands on experience with the tools and showcase the work done during that period. The dataset and other resources can be found in Luke Barrouse's youtube channel.
 
-This portfolio shows how I work with data end to end:
+Primarily, the project targets anybody who is seeking a new job, looking to switch or even upskill for a new role, by dealing with questions like what are the skills required for that role and what are salary they can expect. 
+
+This portfolio was also designed to show how I work with data end to end:
 
 
 ## 🗂️ Portfolio at a Glance
@@ -78,22 +80,7 @@ All three projects explore the same question from different angles: **what does 
 | **Analysis** | Excel, array formulas, data validation, pivot tables |
 | **Visualization** | Power BI, Excel charts and map charts |
 | **Tools** | VS Code, Git, GitHub |
-| **Background** | SAP CPI integration, testing and delivery, cybersecurity fundamentals |
 
-
-## ⭐ Bonus Project: Gaussian Process Regression for Equity Markets
-
-A Gaussian Process Regression model with an RBF kernel, built from scratch using the underlying theory and formulas, for equity market analysis.
-
-👉 [View on GitHub](https://github.com/Manoah1401/GPR-Implementation)
-
-## 📬 Let's Connect
-
-- 💼 LinkedIn:  [Manoah Noble](https://linkedin.com/in/Manoahnoble)
-- 🐙 GitHub: [Manoah1401](https://github.com/Manoah1401)
-- 📧 Email:  manoahnob@gmail.com
-
-> I'm currently looking for data analyst opportunities in the Toronto area.
 
 ---
 
