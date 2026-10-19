@@ -61,11 +61,13 @@ All three projects explore the same question from different angles: **what does 
 
 ## 3️⃣ Power BI: Overiew Dashboard
 
-**Focus:** ✏️ A quick and simple interactive dashboard to quickly analyse the job market data and present to the shareholders.
+**Focus:** ✏️ A quick and simple interactive dashboard to quickly analyse the job market data, which can be easily visualised by the job seekers.
 
-**#Note:** This section is still in progress
+**Skills used:** Charts, Table modelling, Bookmarks, PowerQuery, DAX, Measures, Parameters
 
-![Power BI dashboard](powerbi-dashboard/assets/powerbi_dashboard.gif)
+**Key finding:** The average number of skills required by a Data analyst, in Canada is just under 4 which SQL and Excel found in every other job posting. The median yearly salary that the individual can expect is around $85k.
+
+![Power BI dashboard](powerbi-dashboard/assets/Final-Project-demo.gif)
 
 
 👉 [Full project and .pbix file](powerbi-dashboard)
